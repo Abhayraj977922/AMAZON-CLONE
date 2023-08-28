@@ -1,2 +1,4 @@
 # AMAZON-CLONE
-Let us make the clone of the amazon!
+Check index.html to view the clone
+
+Clone of Amazon
