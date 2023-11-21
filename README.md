@@ -212,3 +212,129 @@ int main()
 	return 0;
 }
 
+
+
+
+flase position//
+#include<stdio.h>
+#include<math.h>
+int main(){
+    printf("Program to find the roots by false postion method");
+    printf("\n");
+    printf("\t\t\t\t\t\t by : Abhay (BCA)\n");
+    int i,k;
+    float a,b,c,fa,fb,fc;
+    //equation=x^3x-x-1;
+    printf("Enter the roots:\n");
+    printf("Enter the first interval a:");
+    scanf("%f",&a);
+     printf("Enter the Second interval b:");
+    scanf("%f",&b);
+    printf("\n");
+    printf("Enter the number of iterations :");
+    scanf("%d",&k);
+    printf("\n");
+    for(i=1;i<=k;i++){
+        printf("iterations %d \n",i);
+        printf("a: %.5f  ",a);
+         printf("b: %.5f  ",b);
+         
+         fa=a*a*a-a-1;
+         fb=b*b*b-b-a;
+         
+         printf("fa: %.5f  ",fa);
+         printf("fb: %.5f  ",fb);
+         c=a-((b-a)/(fb-fa))*fa;
+         
+         printf("  c: %.5f\t",c);
+         
+         fc=c*c*c-c-1;
+         printf("   fc:%.5f\n\n",fc);
+         
+         if(fc>0){
+             b=c;
+         }
+         
+    }
+    if(fc<0){
+        a=c;
+        
+        
+    }
+
+}
+
+
+
+newton//
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int i,n;
+    float a,b,c,fo,fc,fdc;
+    printf("Program to find the roots of a equation using derivative");
+    printf("\n");
+    printf("\t\t\t\t\t\t by : Abhay (BCA)\n");
+    
+    printf("Enter the roots: ");
+    scanf("%f%f",&a,&b);
+    c=(a+b)/2;
+    printf("value of c: %f\n",c);
+    printf("Iterations: ");
+    scanf("%d",&n);
+    
+    for(i=1;i<=n;i++){
+        printf("\nIteration %d :\n",i);
+        fc=c*c*c-c-1;
+        printf("The equation f(c)=c*c*c-c-1 : %f\n",fc);
+        fdc=3*c*c-1;
+        printf("The derivative of the equation f(c)=3*c*c-1 : %f\n",fdc);
+    
+        fo=c-(fc/fdc);
+        printf("%d Iteration %f\n",i,fo);
+        c=fo;
+    }
+    }
+
+
+    bisection//
+    #include<stdio.h>
+#include<math.h>
+int main(){
+	int i,k;
+	float a,b,c,fa,fb,fc;
+	printf("Program to find roots of a equation using bisection method");
+	printf("\n");
+	printf("\t\t\t\t\t\t\tby : Abhay (BCA)\n");
+	//equation x3-2x-5;
+	printf("\n");
+	printf("Enter the roots\n");
+	printf("Enter the first interval a:");
+	scanf("%f",&a);
+	printf("Enter the second interval b:");
+	scanf("%f",&b);
+	printf("Enter the number of iterations:");
+	scanf("%d",&k);
+	for(i=1;i<=k;i++){
+		printf("\n");
+		printf("In iteration %d\n",i);
+		
+		printf("a: %.5f  ",a);
+		printf("b: %.5f  ",b);
+		fa=2*a*a*a-2*a-5;
+		fb=2*b*b*b-2*b-5;
+		printf("fa: %.5f  ",fa);
+		printf("fb: %.5f  ",fb);
+		c=(a+b)/2;
+		printf("c: %.5f  ",c);
+		fc=2*c*c*c-2*c-5;
+		printf("fc: %.5f\n",fc);
+		if(fc>0){
+			b=c;
+		}
+	
+		if(fc<0){
+			a=c;
+		}
+	}
+}
