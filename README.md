@@ -1,5 +1,5 @@
-[27/08, 9:54 am] ᴀʙʜᴀʏ.....: Bubble sort
-[27/08, 9:54 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Bubble sort
+#include <stdio.h>
 
 int main() {
     int size, temp;
@@ -30,8 +30,8 @@ int main() {
 
     return 0;
 }
-[27/08, 9:55 am] ᴀʙʜᴀʏ.....: Binary search
-[27/08, 9:55 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Binary search
+#include <stdio.h>
 
 int main() {
     int size, key; // Declare variables for size and key
@@ -70,9 +70,9 @@ int main() {
     }
 
     return 0;
-}
-[27/08, 9:57 am] ᴀʙʜᴀʏ.....: Linear search
-[27/08, 9:57 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+    }
+Linear search
+#include <stdio.h>
 
 int main() {
     printf("Linear Search\n");
@@ -104,8 +104,8 @@ int main() {
     
     return 0;
 }
-[27/08, 9:58 am] ᴀʙʜᴀʏ.....: Deletion in linear array
-[27/08, 9:58 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Deletion in linear array
+#include <stdio.h>
 
 int main() {
     int size, position;
@@ -140,8 +140,8 @@ int main() {
 
     return 0;
 }
-[27/08, 9:59 am] ᴀʙʜᴀʏ.....: Insertion in array
-[27/08, 9:59 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Insertion in array
+#include <stdio.h>
 
 int main() {
     int i, n, pos, num;
@@ -175,8 +175,8 @@ int main() {
     
     return 0;
 }
-[27/08, 10:01 am] ᴀʙʜᴀʏ.....: Average of n number
-[27/08, 10:01 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+ Average of n number
+ #include <stdio.h>
 
 int main() {
     int i, n;
@@ -199,8 +199,8 @@ int main() {
 
     return 0;
 }
-[27/08, 10:02 am] ᴀʙʜᴀʏ.....: Traverse in 1d array
-[27/08, 10:02 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Traverse in 1d array
+#include <stdio.h>
 
 int main() {
     int i, n;
@@ -223,8 +223,8 @@ int main() {
     
     return 0;
 }
-[27/08, 10:04 am] ᴀʙʜᴀʏ.....: Transpose
-[27/08, 10:04 am] ᴀʙʜᴀʏ.....: #include <stdio.h>
+Transpose
+#include <stdio.h>
 
 int main() {
     int a[10][10], transpose[10][10];
@@ -266,7 +266,8 @@ int main() {
 
     return 0;
 }
-[09/09, 10:40 pm] ᴀʙʜᴀʏ.....: #include<stdio.h>
+matrix
+#include<stdio.h>
 int main(){
     int i,j,r,c,a[100][100],b[100][100],sum[100][100];
     
@@ -329,7 +330,7 @@ printf("\n");
 
 
 }
-[10/09, 11:55 am] ᴀʙʜᴀʏ.....: #include<stdio.h>
+#include<stdio.h>
 int main(){
     int i,a[10],n,pos;
     
@@ -352,7 +353,7 @@ for(i=0;i<n-1;i++){
     printf("%d\t",a[i]);
 }
 }
-[10/09, 11:55 am] ᴀʙʜᴀʏ.....: #include<stdio.h>
+ #include<stdio.h>
 int main(){
     int n,a[10],i,key,pos;
     
